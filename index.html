@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css'>
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 body {
   display: flex;
   flex-wrap: wrap;
@@ -14,14 +15,25 @@ body {
   padding: 1.5rem;
   background: #edffd9;
 }
-
 img {
-  width: 12rem;
+  display: block;
+  width: 16rem;
   max-width: 100%;
+  -webkit-animation: hue 60s infinite;
+          animation: hue 60s infinite;
 }
-
 .content {
   max-width: 40rem;
+}
+.content h1 {
+  font-family: "Russo One", sans-serif;
+  font-weight: inherit;
+  font-size: 4rem;
+}
+.content h1,
+.content h2,
+.content p {
+  color: black;
 }
 .content .cta {
   margin-top: 2rem;
@@ -29,26 +41,40 @@ img {
 .content p {
   font-size: 1.1rem;
 }
-
 footer {
   height: 1rem;
 }
+@-webkit-keyframes hue {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(359deg);
+  }
+}
+
+@keyframes hue {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(359deg);
+  }
+}
 </style>
 </head>
-
 <body translate="no" >
-  <img src="er_bg.png" alt="">
+  <img src="https://assets.codepen.io/130015/er_bg2.png" alt="">
 <section class="content">
-  <h1 class="title is-2">Everyday Rug</h1>
-  <p>Everyday Rug is a loving tribute to all the losers in crypto. We out here getting dunked on and buying the top everyday. New drops daily until we hit 6,900.</p>
+  <h1 class="">Everyday Rug</h1> 
+  <p>Everyday Rug is a new NFT art project and a loving tribute to all the losers in crypto. Each artwork comes with a small story of pain and loss. New drops daily until we hit 6,900.</p>
   <p>For now we are minting on the Polygon network via <a href="https://opensea.io/collection/everydayrug">OpenSea</a>. The plan is to migrate to the XRPL ledger and build a marketplace when xls-20 is ready.</p>
+  <p>If you would like to contribute a story please reach out on <a href="https://twitter.com/everydayrug">Twitter</a> with the hashtag <strong>#EverydayRugStory</strong>, we would be happy to split the royalties. Our goal is to see this become a community effort.</p>
   <div class="cta">
-    <p><a class="button is-dark" href="https://opensea.io/collection/everydayrug">Everyday Rug on OpenSea</a></p>
-  <p><a class="button is-dark" href="https://twitter.com/everydayrug">@everydayrug on Twitter</a>.</p>
+    <p><a class="button is-black" href="https://opensea.io/collection/everydayrug">Everyday Rug on OpenSea</a></p>
+  <p><a class="button is-black" href="https://twitter.com/everydayrug">@everydayrug on Twitter</a>.</p>
   </div>
 </section>
 <footer></footer>
 </body>
-
 </html>
- 
