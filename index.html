@@ -6,13 +6,16 @@
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 body {
+  background: #edffd9;
+}
+
+.zero {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem 2rem;
-  justify-content: space-evenly;
+  justify-content: center;
+  display: flex;
   align-items: center;
-  min-height: 100vh;
-  background: #edffd9;
 }
 
 .hero-img {
@@ -21,10 +24,12 @@ body {
   max-width: 100%;
   -webkit-animation: hue 60s infinite;
           animation: hue 60s infinite;
+  margin-top: 1rem;
 }
 
 .content {
   padding: 2rem;
+  margin-bottom: 1rem;
   max-width: 40rem;
 }
 .content h1 {
@@ -81,26 +86,22 @@ footer {
   margin-top: 0.5rem;
 }
 </style>
-
-  
-  
-  
-  
-
 </head>
 
 <body translate="no" >
+  <div class="zero">
   <img class="hero-img" src="https://assets.codepen.io/130015/er_bg2.png" alt="">
-<section class="content">
-  <h1 class="">Everyday Rug</h1> 
-  <p>Everyday Rug is a new NFT art project and a loving tribute to all the winners and losers in crypto. Each artwork comes with a small story of fortune or pain. New drops daily until we hit 6,900.</p>
-  <p>For now we are minting on the Polygon network via <a href="https://opensea.io/collection/everydayrug">OpenSea</a>. The plan is to migrate to the XRPL ledger and build a marketplace when xls-20 is ready.</p>
-  <p>If you would like to contribute a story please reach out on <a href="https://twitter.com/everydayrug">Twitter</a> with the hashtag <strong>#EverydayRugStory</strong>, we would be happy to split the royalties. Our goal is to see this become a community effort.</p>
-  <div class="cta">
-    <p><a class="button is-black" href="https://opensea.io/collection/everydayrug">Everyday Rug on OpenSea</a></p>
-  <p><a class="button is-black" href="https://twitter.com/everydayrug">@everydayrug on Twitter</a>.</p>
-  </div>
-</section>
+  <section class="content">
+    <h1 class="">Everyday Rug</h1> 
+    <p>Everyday Rug is a new NFT art project dedicated to all the winners and losers in crypto. Each artwork comes with a small story of fortune or pain. New work daily until we hit 6,900.</p>
+    <p>For now work is minted on the Polygon network via <a href="https://opensea.io/collection/everydayrug">OpenSea</a>. The plan is to move to the XRPL ledger and build a marketplace when the <a href="https://github.com/XRPLF/XRPL-Standards/discussions/46">XLS-20d</a>  spec is ready.</p>
+    <p>If you would like to contribute a story please reach out on <a href="https://twitter.com/everydayrug">Twitter</a> with the hashtag <strong>#EverydayRugStory</strong>, we would be happy to share the royalties or gift an NFT. Our goal is to see this become a community project.</p>
+    <div class="cta">
+      <p><a class="button is-black" href="https://opensea.io/collection/everydayrug">Everyday Rug on OpenSea</a></p>
+    <p><a class="button is-black" href="https://twitter.com/everydayrug">@everydayrug on Twitter</a>.</p>
+    </div>
+  </section>
+</div>
 <section class="gallery">
   <div class="item">
     <img src="https://assets.codepen.io/130015/er_broc.png" alt="">
@@ -139,10 +140,8 @@ footer {
     <p>Coach Carl held a fund raiser to buy new uniforms for the team. He lost it all on a margin call trading #BabyElon. Carl insists that t-shirts with sharpie numbers give the team character and complaining is a sign of weakness.</p>
   </div>
 </section>
-<footer></footer>
 
 </body>
-
 </html>
  
 
